@@ -1,5 +1,7 @@
 <h1 align="center">Countries App</h1>
 
+https://github.com/FelipeSimis/countries-app-next-13/assets/71521269/971db2fc-4f64-4852-83e5-be403261c3b4
+
 ## Prerequisites
 
 - **NodeJS**: If you don't have it, just download it [here](https://nodejs.org/en/download/)
