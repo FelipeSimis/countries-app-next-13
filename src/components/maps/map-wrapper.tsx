@@ -6,7 +6,7 @@ import { Skeleton } from '@/components/ui/skeleton'
 
 const Map = dynamic(async () => await import('@/components/maps/map').then(mod => mod.Map), {
   ssr: false,
-  loading: () => <Skeleton className="w-full h-96" />
+  loading: () => <Skeleton className="h-96 w-full" />
 })
 
 type MapWrapperProps = {

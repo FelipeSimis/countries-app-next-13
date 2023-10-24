@@ -16,7 +16,7 @@ const Error = ({
   }, [error])
 
   return (
-    <div className="w-full h-[90vh] flex flex-col items-center justify-center gap-4 bg-error bg-no-repeat bg-center bg-contain">
+    <div className="flex h-[90vh] w-full flex-col items-center justify-center gap-4 bg-error bg-contain bg-center bg-no-repeat">
       <h1 className="text-4xl text-white">Oops!</h1>
       <p className="text-white">Something went wrong</p>
 

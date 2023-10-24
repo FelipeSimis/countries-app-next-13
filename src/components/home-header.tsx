@@ -17,14 +17,14 @@ export const HomeHeader = () => {
   }
 
   return (
-    <div className="flex flex-col justify-between gap-4 w-full xs:flex-row xs:items-center">
-      <div className="flex items-center gap-x-2 bg-secondary rounded-md px-4 py-1 w-clamp max-w-[400px]">
+    <div className="flex w-full flex-col justify-between gap-4 xs:flex-row xs:items-center">
+      <div className="flex w-clamp max-w-[400px] items-center gap-x-2 rounded-md bg-secondary px-4 py-1">
         <SearchIcon className="h-4 w-4" />
 
         <Input
           placeholder="Search for a country (name, capital, alt spellings)..."
           onChange={handleOnChange}
-          className="w-full bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:ring-transparent border-none"
+          className="w-full border-none bg-transparent focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0"
         />
       </div>
 

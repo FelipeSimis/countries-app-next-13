@@ -10,7 +10,7 @@ export const RegionSelect = () => {
 
   return (
     <Select onValueChange={handleFilterCountries}>
-      <SelectTrigger className="w-[180px] bg-secondary h-12">
+      <SelectTrigger className="h-12 w-[180px] bg-secondary">
         <SelectValue placeholder="All" />
       </SelectTrigger>
 

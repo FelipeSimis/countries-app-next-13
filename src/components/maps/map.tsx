@@ -25,7 +25,7 @@ export const Map = ({ center, area }: MapProps) => {
     <MapContainer
       center={center as Leaflet.LatLngExpression}
       zoom={5}
-      className="w-full h-96"
+      className="h-96 w-full"
       zoomControl={false}
       touchZoom={false}
     >

@@ -16,7 +16,7 @@ type CountryCardProps = {
 export const CountryCard = memo(function CountryCard ({ name, capital, cca3, image, population, region }: CountryCardProps) {
   return (
     <Link href={`/info/${cca3}`}>
-      <div className="bg-secondary rounded-lg overflow-hidden hover:scale-110 transition-transform duration-300 w-[280px] max-w-[280px]">
+      <div className="w-[280px] max-w-[280px] overflow-hidden rounded-lg bg-secondary transition-transform duration-300 hover:scale-110">
         <AspectRatio ratio={280 / 193}>
           <Image
             src={image}
@@ -27,8 +27,8 @@ export const CountryCard = memo(function CountryCard ({ name, capital, cca3, ima
           />
         </AspectRatio>
 
-        <div className="py-5 px-3">
-          <h5 className="text-foreground mb-1 text-base">{name}</h5>
+        <div className="px-3 py-5">
+          <h5 className="mb-1 text-base text-foreground">{name}</h5>
 
           <div className="text-sm">
             Population: <span className="font-light">{population.toLocaleString()}</span>

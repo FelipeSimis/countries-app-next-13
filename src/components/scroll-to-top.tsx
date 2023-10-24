@@ -13,7 +13,7 @@ export const ScrollToTop = () => {
   }
 
   return (
-    <Button variant="secondary" onClick={onClick} className="flex fixed bottom-2 right-2 z-10 rounded-full h-12 w-12 p-0">
+    <Button variant="secondary" onClick={onClick} className="fixed bottom-2 right-2 z-10 flex h-12 w-12 rounded-full p-0">
       <ChevronUpIcon />
     </Button>
   )

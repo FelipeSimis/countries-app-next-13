@@ -9,12 +9,12 @@ export const InfoPageHeader = () => {
   const { back, forward } = useRouter()
 
   return (
-    <div className="w-full flex items-center justify-between">
-      <Button onClick={back} variant="secondary" size="sm" className="font-normal text-sm gap-2">
+    <div className="flex w-full items-center justify-between">
+      <Button onClick={back} variant="secondary" size="sm" className="gap-2 text-sm font-normal">
         <ArrowLeftIcon size={14} /> Back
       </Button>
 
-      <Button onClick={forward} variant="secondary" size="sm" className="font-normal text-sm gap-2">
+      <Button onClick={forward} variant="secondary" size="sm" className="gap-2 text-sm font-normal">
         Forward <ArrowRightIcon size={14} />
       </Button>
     </div>
