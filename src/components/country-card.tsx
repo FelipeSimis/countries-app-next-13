@@ -24,6 +24,7 @@ export const CountryCard = memo(function CountryCard ({ name, capital, cca3, ima
             fill
             sizes="100vw"
             className="object-cover"
+            priority={name === 'Afghanistan'}
           />
         </AspectRatio>
 
