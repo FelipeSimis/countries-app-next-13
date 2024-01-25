@@ -41,14 +41,12 @@ export const CountriesWrapper = () => {
             ))
           )
         : (
-            <>
-              {countries.map(country => (
-                <CountryCard key={country.name.common} name={country.name.common} cca3={country.cca3} capital={country.capital} image={country.flags.svg} population={country.population} region={country.region} />
-              ))}
-
-              <div className="absolute -bottom-72" ref={targetRef} />
-            </>
+            countries.map(country => (
+              <CountryCard key={country.name.common} name={country.name.common} cca3={country.cca3} capital={country.capital} image={country.flags.svg} population={country.population} region={country.region} />
+            ))
           )}
+
+        <div className="absolute -bottom-72" ref={targetRef} />
 
         {isTargetVisible || (!isAtTop && !isTargetVisible) ? <ScrollToTop /> : null}
     </>
